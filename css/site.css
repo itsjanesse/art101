@@ -4,7 +4,7 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #2b7197;
+  background-color: #6bb0d4;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -23,14 +23,14 @@ h1 {
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #3a97c9;
+  border: solid 1px #6b6b6b7e;
+  background-color: #6bb0d4;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #317ea8;
+  border: solid 1px #6b6b6b7e;
+  background-color: #6bb0d4;
 }
