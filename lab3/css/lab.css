@@ -14,7 +14,6 @@ h1 {
 h2 {
   color: #575ba5;
   font-size: 150%;
-  font-weight: 200%;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -31,7 +30,7 @@ figcaption{
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #ffffff;
+  border: dashed 1px #ffffff;
 }
 
 #content {
@@ -40,13 +39,21 @@ width: fit-content;
 min-height: 300 px;
 padding: 10px;
 margin: 10px;
-border: dashed 1px #ffffff;
 font-size: 18px;
 }
 div.minor-section{
   background-color: #a7b8e7;
 }
-img{
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 600px;
-  min-height: 300px;
+  max-height: 600px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+figcaption {
+  text-align: center;
 }
