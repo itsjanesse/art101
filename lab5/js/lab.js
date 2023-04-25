@@ -3,13 +3,13 @@
 // Date: 23 April
 
 // Define Variables
-make="Toyota";
-model="Corolla";
-color="Midnight Black Metallic";
-year=2023;
+make = "Toyota";
+model = "Corolla";
+color = "Midnight Black Metallic";
+year = 2023;
 
 //calculate
-age=2023- year;
+age = 2023- year;
 
 //output
 document.writeln("Make: " + make + "<br>");
