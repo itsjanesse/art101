@@ -8,10 +8,10 @@ model = "Corolla";
 color = "Midnight Black Metallic";
 year = 2023;
 
-//calculate
-age = 2023- year;
+// Calculate
+age = 2023 - year;
 
-//output
+// Output
 document.writeln("Make: " + make + "<br>");
 document.writeln("Model: " + model + "<br>");
 document.writeln("Color: " + color + "<br>");
