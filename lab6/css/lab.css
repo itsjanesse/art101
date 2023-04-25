@@ -1,9 +1,66 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.car {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  max-height: 600px;
+  padding-bottom: 15px;
+}
+body{
+  background-color: #6f1b02;
+}
+
+h1 {
+  color: #f29f41;
+  font-size: 200%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2, h3 {
+  color: #f29f41;
+  font-size: 150%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  font-family: 'Courier New';
+  color: #f29f41;
+  text-indent: 20px;
+  margin-left: 10px;
+}
+
+figcaption{
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+  padding: 10px;
+  margin-bottom: 10px;
+  border: dashed 1px #f29f41;
+}
+
+#content {
+background-color: #621802;
+width: fit-content;
+min-height: 300 px;
+padding: 10px;
+margin: 10px;
+font-size: 18px;
+}
+
+div.minor-section{
+  background-color: #7b1f02;
+}
+
+figcaption {
+  text-align: center;
+  color: #f29f41;
+}
+
+div.output {
+  color: #f29f41;
+  font-family: 'Courier New', Courier, monospace;
+}
