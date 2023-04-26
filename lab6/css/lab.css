@@ -10,7 +10,7 @@
   padding-bottom: 15px;
 }
 body{
-  background-color: #6f1b02;
+  background-color: #671b04;
 }
 
 h1 {
@@ -43,8 +43,8 @@ figcaption{
 }
 
 #content {
-background-color: #621802;
-width: fit-content;
+background-color: #541502;
+width: auto;
 min-height: 300 px;
 padding: 10px;
 margin: 10px;
@@ -52,7 +52,7 @@ font-size: 18px;
 }
 
 div.minor-section{
-  background-color: #7b1f02;
+  background-color: #5b1e0b;
 }
 
 figcaption {
