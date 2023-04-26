@@ -1,6 +1,6 @@
 // index.js - working with partner to using Javascript arrays and objects
 // Author: Janesse Liang <jlian100@ucsc.edu>
-// Date: May 1, 2023
+// Date: April 26, 2023
 
 // Define Variables
 myTransport = ["Toyota Corolla", " my skateboard", " rides from friends", " and buses"];
@@ -17,6 +17,7 @@ myMainRide = {
 
 // Output
 document.writeln("Different transportation methods I use: " + myTransport + "<br>");
+
 // Allows us to write an object to the document
 document.writeln("My main ride: <pre>", 
     JSON.stringify(myMainRide, null, '\t'), "</pre>");
