@@ -2,7 +2,7 @@
 // Author: Janesse Liang <jlian100@ucsc.edu>
 // Date: May 3, 2023
 
-// sortUserName - a function that takes user input and sorts the lettrs
+// sortUserName - a function that takes user input and sorts the letters
 // of their name
 function sortUserName() {
   var userName = window.prompt("Hi! Tell me your name, so I could fix it.")
