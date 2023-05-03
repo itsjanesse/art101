@@ -1,4 +1,4 @@
-// index.js - working with partner to using Javascript arrays 
+// index.js - working with partner to using Javascript functions
 // Author: Janesse Liang <jlian100@ucsc.edu>
 // Date: May 3, 2023
 
