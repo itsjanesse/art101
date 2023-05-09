@@ -18,12 +18,12 @@ var result = array.map(isEven);
 // should return [true, false, true, true, true, true, true]
 console.log("Test of evenness of array:", result);
 
-var mapResults = array.map(function (x) {
+var results = array.map(function (x) {
   return x ** 0.5;
 })
 
-console.log("Squareroot of array:", mapResults)
+console.log("Squareroot of array:", results)
 
 // Output
 var outputEl = document.getElementById("output");
-outputEl.innerHTML = mapResults; //10,9,2,4,6.48074069840786,12,100
+outputEl.innerHTML = results; //10,9,2,4,6.48074069840786,12,100
