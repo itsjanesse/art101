@@ -1,26 +1,29 @@
-// index.js - working with partner to using Javascript arrays 
+// index.js - working with partner to using Javascript anon functions and
 // Author: Janesse Liang <jlian100@ucsc.edu>
-// Date: May 3, 2023
+// Date: May 8, 2023
 
-// sortUserName - a function that takes user input and sorts the lettrs
-// of their name
-function sortUserName() {
-  var userName = window.prompt("Hi! Tell me your name, so I could fix it.")
-  console.log("userName =", userName);
-  // split string to array
-  var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-  // sort the array
-  var nameArraySort = nameArray.sort();
-  console.log("nameArraySort =", nameArraySort);
-  // join array back to string
-  var nameSorted = nameArraySort.join('');
-  console.log("nameSorted =", nameSorted);
-  // note that above could be done in a single line:
-  // userName.toLower().split('').sort(). join('')
-  return nameSorted;
+// 
+function isEven(x) {
+  return (x % 2 == 0);
 }
 
+//test function
+console.log("Is 1 even? ", isEven(1));
+console.log("Is 2 even? ", isEven(2));
+
+array = [100, 81, 4, 16, 42, 144, 10000]
+console.log("My array", array);
+
+var result = array.map(isEven);
+// should return [true, false, true, true, true, true, true]
+console.log("Test of evenness of array:", result);
+
+var mapResults = array.map(function (x) {
+  return x ** 0.5;
+})
+
+console.log("Squareroot of array:", mapResults)
+
 // Output
-document.writeln("Hey, I fixed your name: ",
-  sortUserName(), "</br>");
+var outputEl = document.getElementById("output");
+outputEl.innerHTML = mapResults; //10,9,2,4,6.48074069840786,12,100
