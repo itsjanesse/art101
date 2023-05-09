@@ -1,26 +1,22 @@
-// index.js - working with partner to using Javascript arrays 
+// index.js - working with partner using Javascript DOM elements
 // Author: Janesse Liang <jlian100@ucsc.edu>
-// Date: May 3, 2023
+// Date: May 9, 2023
 
-// sortUserName - a function that takes user input and sorts the lettrs
-// of their name
-function sortUserName() {
-  var userName = window.prompt("Hi! Tell me your name, so I could fix it.")
-  console.log("userName =", userName);
-  // split string to array
-  var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-  // sort the array
-  var nameArraySort = nameArray.sort();
-  console.log("nameArraySort =", nameArraySort);
-  // join array back to string
-  var nameSorted = nameArraySort.join('');
-  console.log("nameSorted =", nameSorted);
-  // note that above could be done in a single line:
-  // userName.toLower().split('').sort(). join('')
-  return nameSorted;
-}
+// creating variables
+var oldEl = document.getElementById("output");
+var new1El = document.createElement("p");
+var new2El = document.createElement("h")
 
-// Output
-document.writeln("Hey, I fixed your name: ",
-  sortUserName(), "</br>");
+// modifying first new element
+oldEl.appendChild(new1El);
+new1El.id = "slay";
+new1El.innerHTML = "Jan was here!";
+new1El.style.fontSize = "30pt";
+new1El.style.fontWeight = "bold";
+
+// modifying second new element
+oldEl.appendChild(new2El);
+new2El.id = "surprise";
+new2El.innerHTML = "There's nothing!";
+new2El.style.fontSize = "40pt";
+new2El.style.fontWeight = "bolder";
