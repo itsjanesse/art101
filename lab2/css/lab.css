@@ -30,6 +30,10 @@ p {
   background-color: #a3e4b7;
 }
 
+div.minor-section{
+  background-color: rgba(66, 152, 108, 0.199);
+}
+
 #content {
 background-color: #84ce9a;
 width: fit-content;
