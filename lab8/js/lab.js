@@ -1,4 +1,4 @@
-// index.js - working with partner to using Javascript anon functions and
+// index.js - working with partner to using Javascript anon functions and callbacks.
 // Author: Janesse Liang <jlian100@ucsc.edu>
 // Date: May 8, 2023
 
