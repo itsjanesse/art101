@@ -57,3 +57,11 @@ img {
 figcaption {
   text-align: center;
 }
+
+:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: 14pt;
+}

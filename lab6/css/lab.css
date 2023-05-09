@@ -64,3 +64,11 @@ div.output {
   color: #f29f41;
   font-family: 'Courier New', Courier, monospace;
 }
+
+:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: 14pt;
+}
