@@ -1,26 +1,27 @@
-// index.js - working with partner to using Javascript arrays 
+// index.js - working with partner to using Javascript events
 // Author: Janesse Liang <jlian100@ucsc.edu>
-// Date: May 3, 2023
+// Date: May 15, 2023
 
-// sortUserName - a function that takes user input and sorts the lettrs
-// of their name
+// sortUserName - function that takes the user's name
+
 function sortUserName() {
-  var userName = window.prompt("Hi! Tell me your name, so I could fix it.")
+  var userName = inputValue
   console.log("userName =", userName);
-  // split string to array
-  var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-  // sort the array
-  var nameArraySort = nameArray.sort();
-  console.log("nameArraySort =", nameArraySort);
-  // join array back to string
-  var nameSorted = nameArraySort.join('');
-  console.log("nameSorted =", nameSorted);
-  // note that above could be done in a single line:
-  // userName.toLower().split('').sort(). join('')
-  return nameSorted;
+  var userArray = userName.split('');
+  console.log("userArray =", userArray);
+  var userArraySort = userArray.sort();
+  console.log("userArraySort =", userArraySort);
+  var userSorted = userArraySort.join('');
+  console.log("userSorted =", userSorted);
+  return userSorted;
 }
 
-// Output
-document.writeln("Hey, I fixed your name: ",
-  sortUserName(), "</br>");
+var button = document.getElementById('my-button');
+
+var outputEl = document.getElementById('output');
+
+button.addEventListener('click', function () {
+  var inputValue = document.getElementById('user-name').value;
+  var sortedUserName = sortUserName(inputValue);
+  outputEl.innerHTML = sortedUserName;
+});
