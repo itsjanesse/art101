@@ -18,7 +18,7 @@ body {
     font-size: 24pt;
     font-family: 'Lucida Grande', 'Lucida Sans';
     font-weight: medium;
-    text-shadow: -1px 0 black, 0 1px #dc7a1e, 1px 0 #dc7a1e, 0 -1px #dc7a1e;
+    text-shadow: -1px 0 black, 0 1px #dc7a1e, 1px 0 #dc7a1e, 0 -1px black;
   }
   
   h2, h3, h4 {
@@ -26,7 +26,7 @@ body {
     font-size: 20pt;
     font-family: 'Lucida Grande', 'Lucida Sans';
     font-weight: medium;
-    text-shadow: -1px 0 black, 0 1px #dc7a1e, 1px 0 #dc7a1e, 0 -1px #dc7a1e;
+    text-shadow: -1px 0 black, 0 1px #dc7a1e, 1px 0 #dc7a1e, 0 -1px black;
   }
   
   p {
