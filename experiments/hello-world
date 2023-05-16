@@ -1,0 +1,13 @@
+// creating event with user input with button
+
+var buttonEl = document.getElementById("my-button")
+
+buttonEl.addEventListener("click", function() {
+    console.log("button pressed");
+
+    var name = prompt("Please input your name:");
+    var nameStr = "Hello, " + name;
+
+    var helloEl = document.getElementById("hello-world");
+        helloEl.innerHTML = nameStr;
+})
