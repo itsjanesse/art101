@@ -2,26 +2,21 @@
 // Author: Janesse Liang <jlian100@ucsc.edu>
 // Date: May 15, 2023
 
-// sortUserName - function that takes the user's name
-
+// sorting user input
 function sortUserName() {
-  var userName = inputValue
-  console.log("userName =", userName);
-  var userArray = userName.split('');
-  console.log("userArray =", userArray);
-  var userArraySort = userArray.sort();
-  console.log("userArraySort =", userArraySort);
-  var userSorted = userArraySort.join('');
-  console.log("userSorted =", userSorted);
-  return userSorted;
+  var userName = document.getElementById('user-name').value;
+  console.log("userName: ", userName);
+  var sortedName = userName.toLowerCase().split('').sort().join('');
+  console.log("sortedName: ", sortedName);
+  return sortedName;
 }
 
 var button = document.getElementById('my-button');
-
 var outputEl = document.getElementById('output');
 
 button.addEventListener('click', function () {
-  var inputValue = document.getElementById('user-name').value;
-  var sortedUserName = sortUserName(inputValue);
-  outputEl.innerHTML = sortedUserName;
+  inputValue = document.getElementById('user-name').value;
+  console.log("Your input: ", sortedName);
+  var sortedName = sortUserName();
+  outputEl.innerHTML = "Your sorted name is: " + sortedName;
 });
