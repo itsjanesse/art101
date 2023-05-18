@@ -9,4 +9,4 @@ buttonEl = $('.challenge, .problems, .results').append('<button id=button>click 
 // toggle class special and alert on button click
 $(buttonEl).click(function () {
   $(this).toggleClass('special');
-});
+})
