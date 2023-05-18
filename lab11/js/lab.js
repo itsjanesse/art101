@@ -4,10 +4,9 @@
 
 // created buttons in each minor section
 
-buttonEl = $('.minor-section').append('<button id=button>click me</button>');
+buttonEl = $('.challenge, .problems, .results').append('<button id=button>click me</button>');
 
 // toggle class special and alert on button click
 $(buttonEl).click(function () {
-  $('.minor-section').toggleClass('special');
-  alert("The button has been clicked!");
+  $(this).toggleClass('special');
 });

@@ -35,9 +35,8 @@ margin: 10px;
 font-size: 18px;
 }
 
-div.minor-section{
+.challenge, .problems, .results{
   background-color: #f4f4f474;
-  max-width: 1650px;
   border-radius: 30px;
 }
 
@@ -58,6 +57,11 @@ button {
   display: inline-block;
   font-size: 16px;
   background-color: #e4ad65; 
+}
+
+.special {
+  background-color: #88480b56; 
+  border-radius: 30px;
 }
 
 button:active {
