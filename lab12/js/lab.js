@@ -1,26 +1,30 @@
-// index.js - working with partner to using Javascript arrays 
+// index.js - working with partner to using Javascript conditionals
 // Author: Janesse Liang <jlian100@ucsc.edu>
-// Date: May 3, 2023
+// Date: May 18, 2023
 
-// sortUserName - a function that takes user input and sorts the lettrs
-// of their name
-function sortUserName() {
-  var userName = window.prompt("Hi! Tell me your name, so I could fix it.")
-  console.log("userName =", userName);
-  // split string to array
-  var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-  // sort the array
-  var nameArraySort = nameArray.sort();
-  console.log("nameArraySort =", nameArraySort);
-  // join array back to string
-  var nameSorted = nameArraySort.join('');
-  console.log("nameSorted =", nameSorted);
-  // note that above could be done in a single line:
-  // userName.toLower().split('').sort(). join('')
-  return nameSorted;
+// sortingHat - sorts user input into Hogwarts house
+
+function sortingHat(str) {
+  var len = str.length;
+  mod = len % 4;
+  if (mod == 0) {
+    return "Gryffindor";
+  }
+  else if (mod == 1) {
+    return "Ravenclaw";
+  }
+  else if (mod == 2) {
+    return "Slytherin";
+  }
+  else if (mod == 3) {
+    return "Hufflepuff";
+  }
 }
-
 // Output
-document.writeln("Hey, I fixed your name: ",
-  sortUserName(), "</br>");
+var myButton = document.getElementById("button");
+myButton.addEventListener("click", function() {
+  var name = document.getElementById("input").value;
+  var house = sortingHat(name);
+  newText = "You have been sorted into " + house +"!";
+  document.getElementById("output").innerHTML = newText;
+})
