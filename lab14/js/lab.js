@@ -1,26 +1,31 @@
-// index.js - working with partner to using Javascript arrays 
+// index.js - create a working loop with partner
 // Author: Janesse Liang <jlian100@ucsc.edu>
-// Date: May 3, 2023
+// Date: May 23, 2023
 
-// sortUserName - a function that takes user input and sorts the lettrs
-// of their name
-function sortUserName() {
-  var userName = window.prompt("Hi! Tell me your name, so I could fix it.")
-  console.log("userName =", userName);
-  // split string to array
-  var nameArray = userName.split('');
-  console.log("nameArray =", nameArray);
-  // sort the array
-  var nameArraySort = nameArray.sort();
-  console.log("nameArraySort =", nameArraySort);
-  // join array back to string
-  var nameSorted = nameArraySort.join('');
-  console.log("nameSorted =", nameSorted);
-  // note that above could be done in a single line:
-  // userName.toLower().split('').sort(). join('')
-  return nameSorted;
+// fizzBuzz - function that will say fizz, buzz, or fizzbuzz depending on value inputted
+function fizzBuzz() {
+  var str;
+  for (var i = 1; i <= 200; i++) {
+    str = "";
+    // if a multiple of 3, print fuzz
+    if (i % 3 == 0) {
+      str += "Fizz!";
+    }
+    // if a multiple of 5, print buzz
+    if (i % 5 == 0) {
+      str += "Buzz!";
+    }
+    // if a multiple of 7, print boom
+    if (i % 7 == 0) {
+      str += "Boom!";
+    }
+    // if the string is still empty, set str to number
+    if (str == "") {
+      str = i;
+    }
+    $("#output").append("<div>" + str);
+  }
 }
 
-// Output
-document.writeln("Hey, I fixed your name: ",
-  sortUserName(), "</br>");
+// prints function in output
+fizzBuzz()
