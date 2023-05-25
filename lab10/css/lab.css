@@ -52,6 +52,7 @@ div {
 
 input#user-name {
   padding: 2px;
+  margin-bottom: 5px;
 } 
 
 button {
