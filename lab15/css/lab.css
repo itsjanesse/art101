@@ -55,6 +55,21 @@ div#output{
     vertical-align: middle;
 }
 
+button {
+  transition-duration: 0.4s;
+  padding: 4px;
+  width: 110px;
+  font-size: 12pt;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #f6f3ca; 
+  color: #3c3c3c;
+}
+
 :-webkit-any-link {
   color: #ebe7e7;
   cursor: pointer;
