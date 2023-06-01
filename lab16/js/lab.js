@@ -1,31 +1,27 @@
-// index.js - create a working loop with partner
+// index.js - work with partner, experiment with processing JSON from an API.
 // Author: Janesse Liang <jlian100@ucsc.edu>
-// Date: May 23, 2023
+// Date: June 1, 2023
 
-// fizzBuzz - function that will say fizz, buzz, or fizzbuzz depending on value inputted
-function fizzBuzz() {
-  var str;
-  for (var i = 1; i <= 200; i++) {
-    str = "";
-    // if a multiple of 3, print fuzz
-    if (i % 3 == 0) {
-      str += "Fizz!";
-    }
-    // if a multiple of 5, print buzz
-    if (i % 5 == 0) {
-      str += "Buzz!";
-    }
-    // if a multiple of 7, print boom
-    if (i % 7 == 0) {
-      str += "Boom!";
-    }
-    // if the string is still empty, set str to number
-    if (str == "") {
-      str = i;
-    }
-    $("#output").append("<div>" + str);
+$.ajax({
+  url: 'https://xkcd.com/info.0.json',
+  method: 'GET',
+  dataType: 'json',
+  success: function(comicObj) {
+    // Process the data and add it to the output div
+    var outputDiv = $('#output'); // Assuming you have a div with id "output"
+
+    // Create a title element
+    var title = $('<h2>').text(comicObj.title);
+    outputDiv.append(title);
+
+    // Create an image element
+    var image = $('<img>').attr('src', comicObj.img);
+    image.attr('alt', comicObj.alt);
+    image.attr('title', comicObj.alt);
+    outputDiv.append(image);
+  },
+  error: function() {
+    // Handle error if the request fails
+    console.log('Error retrieving comic data');
   }
-}
-
-// prints function in output
-fizzBuzz()
+});

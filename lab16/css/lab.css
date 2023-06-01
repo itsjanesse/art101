@@ -2,20 +2,20 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 body{
-  background-image: url("space.jpg");
+  background-image: url("nasa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;          
 }
 
 h1 {
-  color: #e1e1c6;
+  color: #95bbf4;
   font-size: 20 pt;
   font-family: 'Veranda';
 }
 
 h2 {
-  color: #e1e1c6;
+  color: #95bbf4;
   font-size: 16 pt;
   font-family: 'Veranda';
 }
@@ -36,7 +36,7 @@ font-size: 18px;
 }
 
 div.minor-section{
-  background-color: #c6c6c678;
+  background-color: #c7e6e94f;
   border-radius: 5px;
   border: #1c1c1c;
 }
@@ -57,7 +57,7 @@ div#output{
 }
 
 :-webkit-any-link {
-  color: #ebe7e7;
+  color: #161616;
   cursor: pointer;
   text-decoration: underline;
   font-family: 'Arial';
